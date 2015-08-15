@@ -1,10 +1,10 @@
 === TC Specify Search Form ===
 Contributors: taupecat
 Requires at least: 3.4
-Tested up to: 3.4.2
-Stable tag: 1.0
+Tested up to: 4.3
+Stable tag: 1.1
 Tags: search form, widget
-License: GPLv2
+License: MIT
 
 Replaces the default WordPress "Search" widget with one that will use a customized searchform template in your theme.
 
@@ -24,6 +24,9 @@ By default, the "Search" widget in WordPress will include the searchform.php tem
 2. Navigate to the Plugins section of the Dashboard and click "Activate".
 
 == Changelog ==
+
+= Version 1.1 =
+* Updated to avoid PHP4 class constructor deprecation warnings.
 
 = Version 1.0 =
 * Initial release.

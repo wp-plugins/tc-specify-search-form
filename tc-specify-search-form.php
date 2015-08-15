@@ -17,14 +17,14 @@ function tc_specify_search_form_register_widgets() {
 class TC_Specify_Search_Form_Widget extends WP_Widget {
 
     // Process the widget
-    function TC_Specify_Search_Form_Widget() {
+    function __construct() {
 
         $options = array(
             'classname'     => 'tc_specify_search_form widget_search',
             'description'   => __('Specify which searchform-*.php template you wish to display.', 'tc_specify_search_form')
         );
 
-        $this->WP_Widget( 'TC_Specify_Search_Form_Widget', __('TC Specify Search Form', 'tc_specify_search_form'), $options );
+        parent::__construct( 'TC_Specify_Search_Form_Widget', __('TC Specify Search Form', 'tc_specify_search_form'), $options );
     }
 
     // Display the widget form in the admin dashboard
